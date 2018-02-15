@@ -70,6 +70,9 @@
 	margin-right:10px;
 	display:block;
 }
-.page-heading{
+.page-header{
 	display:none;
+}
+.page-wrapper{
+	padding-top:15px;
 }
