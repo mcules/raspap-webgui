@@ -30,6 +30,7 @@ include_once( 'includes/system.php' );
 include_once( 'includes/configure_client.php' );
 include_once( 'includes/networking.php' );
 include_once( 'includes/themes.php' );
+include_once( 'includes/screen.php' );
 
 $output = $return = 0;
 $page = $_GET['page'];
@@ -154,7 +155,7 @@ $theme_url = 'dist/css/' . $theme;
               </li>
               <?php endif; ?>
               <li>
-                 <a href="index.php?page=screen"><i class="fa fa-screen fa-fw"></i> Screen</a>
+                 <a href="index.php?page=screen"><i class="fa fa-desktop fa-fw"></i> Screen</a>
               </li>
               <li>
                  <a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a>
@@ -211,6 +212,9 @@ $theme_url = 'dist/css/' . $theme;
           case "system_info":
             DisplaySystem();
             break;
+          case "screen":
+              DisplayScreenConfig();
+              break;
           default:
             DisplayDashboard();
         }
