@@ -147,6 +147,8 @@ $().ready(function(){
             setupBtns();
         break;
     }
+    
+    $('[data-toggle="popover"]').popover();
 });
 
 
