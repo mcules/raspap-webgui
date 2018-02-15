@@ -154,6 +154,9 @@ $theme_url = 'dist/css/' . $theme;
               </li>
               <?php endif; ?>
               <li>
+                 <a href="index.php?page=screen"><i class="fa fa-screen fa-fw"></i> Screen</a>
+              </li>
+              <li>
                  <a href="index.php?page=system_info"><i class="fa fa-cube fa-fw"></i> System</a>
               </li>
             </ul>

@@ -16,6 +16,7 @@ define('RASPI_WPA_CTRL_INTERFACE', '/var/run/wpa_supplicant');
 define('RASPI_OPENVPN_CLIENT_CONFIG', '/etc/openvpn/client.conf');
 define('RASPI_OPENVPN_SERVER_CONFIG', '/etc/openvpn/server.conf');
 define('RASPI_TORPROXY_CONFIG', '/etc/tor/torrc');
+define('RASPI_SCREEN_CONFIG', '/boot/config.txt');
 
 // Optional services, set to true to enable.
 define('RASPI_HOTSPOT_ENABLED', true );
