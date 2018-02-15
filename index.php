@@ -62,7 +62,7 @@ $theme_url = 'dist/css/' . $theme;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Raspbian WiFi Configuration Portal</title>
+    <title>Kpitaine Box - Configuration Portal</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -87,7 +87,7 @@ $theme_url = 'dist/css/' . $theme;
     <!-- Custom CSS -->
     <link href="<?php echo $theme_url; ?>" title="main" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -107,7 +107,8 @@ $theme_url = 'dist/css/' . $theme;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">RaspAP Wifi Portal v1.3.0</a>
+          <span class="float-right">Based on RaspAP Wifi Portal v1.3.0</span>
+          <a class="navbar-brand" href="index.php"><img src="../img/kpitaine.png">Kpitaine Box Admin</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -116,7 +117,7 @@ $theme_url = 'dist/css/' . $theme;
           <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
               <li>
-                <a href="index.php?page=wlan0_info"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a href="index.php?page=wlan0_info"><i class="fas fa-info fa-fw"></i> Dashboard</a>
               </li>
               <li>
                 <a href="index.php?page=wpa_conf"><i class="fa fa-signal fa-fw"></i> Configure WiFi Client</a>
@@ -133,7 +134,7 @@ $theme_url = 'dist/css/' . $theme;
               <?php endif; ?>
               <?php if ( RASPI_DHCP_ENABLED ) : ?>
               <li>
-                <a href="index.php?page=dhcpd_conf"><i class="fa fa-exchange fa-fw"></i> Configure DHCP Server</a>
+                <a href="index.php?page=dhcpd_conf"><i class="fa fa-exchange-alt fa-fw"></i> Configure DHCP Server</a>
               </li>
               <?php endif; ?>
               <?php if ( RASPI_OPENVPN_ENABLED ) : ?>

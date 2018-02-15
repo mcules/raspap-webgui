@@ -2,12 +2,12 @@
 
 function DisplayScreenConfig() {
 ?>
-<h2>Screen configuration</h2>
+<h2><i class="fa fa-desktop"></i> Screen configuration</h2>
 <form>
 	<div class="form-group">
-		<label for="screenRotation">Screen Size <i class="fas fa-expand-alt"></i>
+		<label for="screenSize">Screen Size <i class="fas fa-expand-arrows-alt"></i>
 		</label>
-		<select class="form-control" id="screenRotation">
+		<select class="form-control" id="screenSize">
 			<option value="auto">automatic</option>
 			<option value="720p">720p</option>
 			<option value="1080p">1080p</option>
@@ -38,7 +38,7 @@ function DisplayScreenConfig() {
 	
 		<h3><i class="fas fa-power-off"></i> Power Management</h3>
 		<div class="crontabOn">
-			<label for="crontabOn"><i class="fas fa-sun"></i>ON </label>
+			<label for="crontabOn"><i class="fas fa-sun"></i> ON </label>
 			<div class="bootstrap-timepicker">
         			<input id="crontabOnTimepicker" type="text" class="input-small">
         			<i class="icon-time"></i>
@@ -61,7 +61,7 @@ function DisplayScreenConfig() {
 		</div>
 		
 		<div class="crontabOff">
-			<label for="crontabOff"><i class="fas fa-sun"></i>ON </label>
+			<label for="crontabOff"><i class="fas fa-moon"></i> OFF </label>
 			<div class="bootstrap-timepicker">
         			<input id="crontabOffTimepicker" type="text" class="input-small">
         			<i class="icon-time"></i>
