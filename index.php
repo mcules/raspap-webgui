@@ -82,7 +82,7 @@ $theme_url = 'dist/css/' . $theme;
     <link href="bower_components/bootstrap-timepicker/css/timepicker.css" rel="stylesheet">
     
     <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 	 
     <!-- Custom CSS -->
     <link href="<?php echo $theme_url; ?>" title="main" rel="stylesheet">
