@@ -124,7 +124,7 @@ $theme_url = 'dist/css/' . $theme;
               </li>
               <?php if ( RASPI_HOTSPOT_ENABLED ) : ?>
               <li>
-                <a href="index.php?page=hostapd_conf"><i class="fa fa-dot-circle-o fa-fw"></i> Configure Hotspot</a>
+                <a href="index.php?page=hostapd_conf"><i class="fas fa-dot-circle fa-fw"></i> Configure Hotspot</a>
               </li>
               <?php endif; ?>
               <?php if ( RASPI_NETWORK_ENABLED ) : ?>
