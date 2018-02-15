@@ -22,6 +22,7 @@ var themes = {
     "default": "custom.css",
     "hackernews" : "hackernews.css",
     "terminal" : "terminal.css",
+    "kpitaine" : "kpitaine.css",
 }
 
 //Loads the correct sidebar on window load,
