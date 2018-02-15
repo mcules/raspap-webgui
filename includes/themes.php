@@ -20,6 +20,7 @@ function DisplayThemeConfig(){
     case "terminal.css":
       $tselected = "selected";
       break;
+    default:
     case "kpitaine.css":
         $kselected = "selected";
         break;
@@ -39,14 +40,19 @@ function DisplayThemeConfig(){
 
   <div class="row">
           <div class="form-group col-md-6">
-            <label for="code">Select a theme</label>  
-              <select class="form-control" id="theme-select">Select a Theme
-                <option value="default" class="theme-link" <?php echo $cselected; ?>>RaspAP (default)</option>
-                <option value="hackernews" class="theme-link"<?php echo $hselected; ?>>HackerNews</option>
-                <option value="terminal" class="theme-link" <?php echo $tselected; ?>>Terminal</option>
-                <option value="kpitaine" class="theme-link" <?php echo $kselected; ?>>Kpitaine</option>
-              </select>
-          </div>
+            <label for="code">Select a theme</label> 
+            <select class="form-control" id="theme-select">
+				<option value="kpitaine" class="theme-link"
+					<?php echo $kselected; ?>>Kpitaine (default)</option>
+				<option value="default" class="theme-link"
+					<?php echo $cselected; ?>>RaspAP</option>
+				<option value="hackernews" class="theme-link"
+					<?php echo $hselected; ?>>HackerNews</option>
+				<option value="terminal" class="theme-link"
+					<?php echo $tselected; ?>>Terminal</option>
+
+			</select>
+		</div>
         </div>
 
     </div><!-- /.panel-body -->

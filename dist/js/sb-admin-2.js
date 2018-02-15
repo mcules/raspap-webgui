@@ -7,7 +7,6 @@ $(function() {
 
 function set_theme(theme) {
     $('link[title="main"]').attr('href', 'dist/css/' + theme);
-
     // persist selected theme in cookie 
     setCookie('theme',theme,90);
 }
