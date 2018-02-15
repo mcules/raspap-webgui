@@ -16,7 +16,9 @@ function DisplayScreenConfig() {
 	<div class="form-check">
 		<input class="form-check-input" type="checkbox" value="removeBlackBorders" id="blackBorders" />
 		<label for="blackBorders">Remove black borders</label>
-		<button type="button" class="btn btn-link" data-toggle="popover" title="Black Borders" data-content="Remove black borders around display"><img class="help-icon" src="img/help.png" /></button>
+		<button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" title="Remove black borders around display">
+			<i class="fa fa-question-circle"></i>
+		</button>
 	</div>
 	<hr />
 	<div class="form-group">
@@ -27,5 +29,10 @@ function DisplayScreenConfig() {
 		</div>
 	</div>
 </form>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 <?php 
 }

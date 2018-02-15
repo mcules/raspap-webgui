@@ -78,10 +78,12 @@ $theme_url = 'dist/css/' . $theme;
 
     <!-- Morris Charts CSS -->
     <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
-
+	<!-- Timepicker CSS -->
+    <link href="bower_components/bootstrap-timepicker/css/timepicker.css" rel="stylesheet">
+    
     <!-- Custom Fonts -->
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+	 
     <!-- Custom CSS -->
     <link href="<?php echo $theme_url; ?>" title="main" rel="stylesheet">
 
