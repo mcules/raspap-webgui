@@ -8,6 +8,7 @@ function DisplayThemeConfig(){
   $cselected = '';
   $hselected = '';
   $tselected = '';
+  $kselected = '';
 
   switch( $_COOKIE['theme'] ) {
     case "custom.css":
@@ -19,6 +20,9 @@ function DisplayThemeConfig(){
     case "terminal.css":
       $tselected = "selected";
       break;
+    case "kpitaine.css":
+        $kselected = "selected";
+        break;
   }
 
   ?>
@@ -40,6 +44,7 @@ function DisplayThemeConfig(){
                 <option value="default" class="theme-link" <?php echo $cselected; ?>>RaspAP (default)</option>
                 <option value="hackernews" class="theme-link"<?php echo $hselected; ?>>HackerNews</option>
                 <option value="terminal" class="theme-link" <?php echo $tselected; ?>>Terminal</option>
+                <option value="kpitaine" class="theme-link" <?php echo $kselected; ?>>Kpitaine</option>
               </select>
           </div>
         </div>
