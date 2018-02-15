@@ -7,12 +7,12 @@
 }
 
 .panel-primary {
-	border-color: #c61931;
+	border-color: #182f51;
 }
 
 .panel-primary>.panel-heading {
-	border-color: #d8224c;
-	background-color: #d8224c;
+	border-color: #182f51;
+	background-color: #182f51;
 }
 
 .panel-footer {
@@ -20,13 +20,13 @@
 }
 
 .btn-primary.btn-outline {
-	color: #c61931;
-	border-color: #c61931;
+	color: #182f51;
+	border-color: #182f51;
 }
 
 .btn-primary:hover {
-	background-color: #c61931;
-	border-color: #c61931;
+	background-color: #283f61;
+	border-color: #283f61;
 }
 
 .info-item {
@@ -54,5 +54,20 @@
     height:300px;
 }
 .navbar-brand img{
-	height: 30px;
+	height: 40px;
+	float:right;
+	margin-top:-10px;
+	margin-right: 20px;
+}
+
+.navbar-header{
+	width:100%;
+}
+.navbar-header .mention{
+	float:right;
+	font-size: 8pt;
+	margin-top:31px;
+	margin-right:10px;
+	display:block;
+}
 }

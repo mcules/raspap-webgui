@@ -108,8 +108,8 @@ $theme_url = 'dist/css/' . $theme;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <span class="float-right">Based on RaspAP Wifi Portal v1.3.0</span>
-          <a class="navbar-brand" href="index.php"><img src="../img/kpitaine.png">Kpitaine Box Admin</a>
+          <span class="mention">Based on RaspAP Wifi Portal v1.3.0</span>
+          <a class="navbar-brand" href="index.php"><img src="../img/kpitaine.png"> Box Admin</a>
         </div>
         <!-- /.navbar-header -->
 
