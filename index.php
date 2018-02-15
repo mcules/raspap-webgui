@@ -94,8 +94,7 @@ $theme_url = 'dist/css/' . $theme;
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-     <span class="float-right">Based on RaspAP Wifi Portal v1.3.0</span>
-     <a class="navbar-brand" href="index.php"><img src="../img/kpitaine.png">Kpitaine Box Admin</a>
+     
   </head>
   <body>
 
