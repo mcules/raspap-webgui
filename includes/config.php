@@ -25,6 +25,6 @@ define('RASPI_DHCP_ENABLED', true );
 define('RASPI_OPENVPN_ENABLED', true );
 define('RASPI_TORPROXY_ENABLED', false );
 define('RASPI_CONFAUTH_ENABLED', true );
-define('RASPI_CHANGETHEME_ENABLED', true );
+define('RASPI_CHANGETHEME_ENABLED', false );
 
 ?>

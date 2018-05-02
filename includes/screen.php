@@ -37,6 +37,7 @@ function DisplayScreenConfig() {
 	<div class="form-group">
 	
 		<h3><i class="fas fa-power-off"></i> Power Management</h3>
+		<span class="alert alert-info">Only HDMI screen will be shutdown. Does not concerne embedded screen.</span>
 		<div class="crontabOn">
 			<label for="crontabOn"><i class="fas fa-sun"></i> ON </label>
 			<div class="bootstrap-timepicker">
@@ -82,15 +83,38 @@ function DisplayScreenConfig() {
 			<label for="crontabOffSaturday">Saturday</label>
 			
 		</div>
-		<span class="alert alert-info">Only HDMI screen will be shutdown</span>
+		
+		
+		
 	</div>
 	<hr />
 	<div class="form-check">
 		<i class="far fa-volume-mute"></i>
 
 		<input class="form-check-input" type="checkbox" value="mute" id="mute" />
-		<label for="mute">Mute sound</label>
+		<label for="mute">Mute sound <i class="fas fa-volume-up"></i></label>
 	</div>
 </form>
+<hr />
+<h2><i class="fa fa-desktop"></i> KPitaine Software</h2>
+<form>
+	<div class="form-group">
+		<label for="software-version">Version</label>
+		<span id="software-version">XXX</span>
+	</div>
+	<div class="form-group">
+    	<label for="screenRotation">Software Branch
+    	</label>
+    	<select class="form-control" id="softwareBranch">
+    		<option value="dev">Development Version</option>
+    		<option value="master">Stable version</option>
+    	</select>
+    </div>
+    <div class="form-check">
+		<input class="form-check-input" type="checkbox" value="debugMode" id="debugMode" />
+		<label for="debugMode">Debug Mode<i class="fas fa-terminal"></i></label>
+	</div>
+</form>
+
 <?php 
 }
