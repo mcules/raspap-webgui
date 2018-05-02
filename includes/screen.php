@@ -36,8 +36,10 @@ function DisplayScreenConfig() {
 	<hr />
 	<div class="form-group">
 	
-		<h3><i class="fas fa-power-off"></i> Power Management</h3>
-		<span class="alert alert-info">Only HDMI screen will be shutdown. Does not concerne embedded screen.</span>
+		<h3><i class="fas fa-power-off"></i> Power Management
+			<button type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" title="Screen Off" data-content="Only HDMI screen will be shutdown. Does not concerne embedded screen.">
+				<i class="fa fa-question-circle"></i>
+			</button></h3>
 		<div class="crontabOn">
 			<label for="crontabOn"><i class="fas fa-sun"></i> ON </label>
 			<div class="bootstrap-timepicker">
@@ -92,11 +94,11 @@ function DisplayScreenConfig() {
 		<i class="far fa-volume-mute"></i>
 
 		<input class="form-check-input" type="checkbox" value="mute" id="mute" />
-		<label for="mute">Mute sound <i class="fas fa-volume-up"></i></label>
+		<label for="mute"><i class="fas fa-volume-up">&nbsp;</i>Mute sound </label>
 	</div>
 </form>
 <hr />
-<h2><i class="fa fa-desktop"></i> KPitaine Software</h2>
+<h2><i class="fa fa-cog"></i> KPitaine Software</h2>
 <form>
 	<div class="form-group">
 		<label for="software-version">Version</label>
@@ -112,7 +114,7 @@ function DisplayScreenConfig() {
     </div>
     <div class="form-check">
 		<input class="form-check-input" type="checkbox" value="debugMode" id="debugMode" />
-		<label for="debugMode">Debug Mode<i class="fas fa-terminal"></i></label>
+		<label for="debugMode"><i class="fas fa-terminal">&nbsp;</i>Debug Mode</label>
 	</div>
 </form>
 
