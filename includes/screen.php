@@ -2,13 +2,13 @@
 
 function DisplayScreenConfig()
 {
-    ?>
-<fieldset>
-    <legend>
+?>
+<fieldset class="panel panel-blue">
+    <legend class="panel-heading">
     	<i class="fa fa-desktop"></i> Screen configuration
     </legend>
 
-	<div class="form-group">
+	<div class="form-group panel-body">
 		<label for="screenSize">Screen Size <i
 			class="fas fa-expand-arrows-alt"></i>
 		</label> 
