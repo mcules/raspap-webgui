@@ -13,12 +13,12 @@ function DisplayScreenConfig()
 		</label> 
 		<select class="form-control" id="screenSize">
 			<optgroup label="Main Uses">
-				<option value="0">automatic</option>
+				<option value="0">Automatic Mode</option>
 				<option value="4">720p / 60Hz</option>
 				<option value="16">1080p / 60Hz</option>
 			</optgroup>
 			<optgroup label="Specific">
-    			<option value="0">automatic</option>
+    			<option value="0">Automatic Mode</option>
     			<option value="1">VGA (640x480)</option>
     			<option value="2">480p / 60Hz</option>
     			<option value="3">480p / 60Hz / 16:9 aspect ratio</option>
