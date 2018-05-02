@@ -3,10 +3,11 @@
 function DisplayScreenConfig()
 {
     ?>
-<h2>
-	<i class="fa fa-desktop"></i> Screen configuration
-</h2>
-<form>
+<fieldset>
+    <legend>
+    	<i class="fa fa-desktop"></i> Screen configuration
+    </legend>
+
 	<div class="form-group">
 		<label for="screenSize">Screen Size <i
 			class="fas fa-expand-arrows-alt"></i>
@@ -109,18 +110,19 @@ function DisplayScreenConfig()
 			class="fas fa-volume-up">&nbsp;</i>Mute sound </label>
 	</div>
 	<button class="btn btn-primary">Change display settings</button>
-</form>
-<form>
+</fieldset>
+<fieldset>
+	<legend>
+		<i class="fas fa-power-off"></i> Power Management
+		<button type="button" class="btn btn-link" data-toggle="popover"
+			data-placement="bottom" title="Screen Off"
+			data-content="Only HDMI screen will be shutdown. Does not concerne embedded screen.">
+			<i class="fa fa-question-circle"></i>
+		</button>
+	</legend>
 	<div class="form-group">
 
-		<h3>
-			<i class="fas fa-power-off"></i> Power Management
-			<button type="button" class="btn btn-link" data-toggle="popover"
-				data-placement="bottom" title="Screen Off"
-				data-content="Only HDMI screen will be shutdown. Does not concerne embedded screen.">
-				<i class="fa fa-question-circle"></i>
-			</button>
-		</h3>
+		
 		<div class="crontabOn">
 			<label for="crontabOn"><i class="fas fa-sun"></i> ON </label>
 			<div class="bootstrap-timepicker">
@@ -169,12 +171,11 @@ function DisplayScreenConfig()
 	</div>
 
 	<button class="btn btn-primary">Display power settings</button>
-</form>
-<hr />
-<h2>
+</fieldset>
+<fieldset>
+	<legend>
 	<i class="fa fa-cog"></i> KPitaine Software
-</h2>
-<form>
+	</legend>
 	<div class="form-group">
 		<label for="software-version">Version</label> <span
 			id="software-version">XXX</span>
@@ -191,11 +192,11 @@ function DisplayScreenConfig()
 			id="debugMode" /> <label for="debugMode"><i class="fas fa-terminal">&nbsp;</i>Debug
 			Mode</label>
 	</div>
-	<button class="btn btn-primary">Change software settings</button>
+	<button class="btn btn-primary">Change software settings</button><br />
 	<button class="btn btn-warning"
-		onclick="return confirm('Are you sure to upgrade software manually ?')">Upgrade
+		onclick="return confirm('⚠ Are you sure to upgrade software manually ?')">Upgrade
 		box softwares</button>
-</form>
+</fieldset>
 
 <?php 
 }
