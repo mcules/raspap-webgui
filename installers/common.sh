@@ -11,10 +11,15 @@ if [ $version -eq 9 ]; then
 elif [ $version -eq 8 ]; then 
     version_msg="Raspian 8.0 (Jessie)" 
     php_package="php5-cgi" 
-else 
-    version_msg="Raspian earlier than 8.0 (Wheezy)"
-    webroot_dir="/var/www" 
-    php_package="php5-cgi" 
+else
+    if [ `cat /etc/debian_version` -eq 'stretch/sid' ];
+        version_msg="Stretch/sid"
+        php_package="php7.0-cgi"
+    else
+        version_msg="Raspian earlier than 8.0 (Wheezy)"
+        webroot_dir="/var/www" 
+        php_package="php5-cgi" 
+    fi
 fi 
 
 # Outputs a RaspAP Install log line
